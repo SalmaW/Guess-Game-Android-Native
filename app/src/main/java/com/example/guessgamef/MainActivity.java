@@ -77,14 +77,14 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         int guess = Integer.parseInt(v.getText().toString());
 
         if(guess == x){
-            wrongRightText.setText("right");
+            wrongRightText.setText("Grate job! You Guessed the Number");
             countText.setText("👏🏻");
             player = MediaPlayer.create(this, R.raw.correct);
             player.start();
             player.setVolume(0.5f,0.5f);
             startGame = false;
         } else {
-            wrongRightText.setText("Wrong");
+            wrongRightText.setText("Wrong. Try Again");
             wrongs++;
             player = MediaPlayer.create(this, R.raw.wrong);
             player.start();
@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         }
 
         if(wrongs == 3){
+            wrongRightText.setText("Game Over");
             Toast.makeText(this, "Game over",  Toast.LENGTH_SHORT).show();
             player = MediaPlayer.create(this, R.raw.game_over);
             player.start();
