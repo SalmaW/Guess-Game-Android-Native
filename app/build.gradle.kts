@@ -33,6 +33,8 @@ android {
 
 dependencies {
 
+    implementation ("com.daimajia.androidanimations:library:2.4@aar")
+    implementation ("com.github.nisrulz:sensey:1.9.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

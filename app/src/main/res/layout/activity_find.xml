@@ -2,22 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/guessX"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Guess X"
-        android:textColor="#6750A3"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guess"
-        app:layout_constraintEnd_toEndOf="@+id/guess"
-        app:layout_constraintStart_toStartOf="@+id/guess" />
+    tools:context=".FindActivity">
 
     <TextView
         android:id="@+id/wrongRightText"
@@ -73,7 +61,8 @@
                 android:onClick="guess"
                 android:text="1"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -84,7 +73,8 @@
                 android:onClick="guess"
                 android:text="2"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -95,7 +85,8 @@
                 android:onClick="guess"
                 android:text="3"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
         </TableRow>
 
         <TableRow
@@ -112,7 +103,8 @@
                 android:onClick="guess"
                 android:text="4"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -123,7 +115,8 @@
                 android:onClick="guess"
                 android:text="5"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -134,7 +127,8 @@
                 android:onClick="guess"
                 android:text="6"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
         </TableRow>
 
         <TableRow
@@ -151,7 +145,8 @@
                 android:onClick="guess"
                 android:text="7"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -162,7 +157,8 @@
                 android:onClick="guess"
                 android:text="8"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -173,7 +169,8 @@
                 android:onClick="guess"
                 android:text="9"
                 android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableTint="#6750A3" />
         </TableRow>
 
     </TableLayout>
@@ -200,4 +197,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/sound_on"
         app:tint="#6750A3" />
+
+    <TextView
+        android:id="@+id/guessX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="#6750A3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guess"
+        app:layout_constraintEnd_toEndOf="@+id/guess"
+        app:layout_constraintStart_toStartOf="@+id/guess"
+        tools:text="Find X" />
 </androidx.constraintlayout.widget.ConstraintLayout>
